@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: cli
+  description: terminal interface to my involved tasks
+  homepage: 'https://github.com/trevtrich/cli#readme'
+  private: false

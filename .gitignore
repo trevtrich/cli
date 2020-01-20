@@ -1,0 +1,6 @@
+/node_modules/
+/bin/
+/coverage/
+/.nyc_output/
+
+.eslintcache
