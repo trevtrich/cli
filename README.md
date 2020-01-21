@@ -1,5 +1,7 @@
 # cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/trevtrich/cli.svg)](https://greenkeeper.io/)
+
 terminal interface to my involved tasks
 
 <!-- status badges -->
