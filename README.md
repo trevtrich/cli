@@ -1,7 +1,5 @@
 # cli
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/trevtrich/cli.svg)](https://greenkeeper.io/)
-
 terminal interface to my involved tasks
 
 <!-- status badges -->
@@ -14,6 +12,7 @@ terminal interface to my involved tasks
 ## Contributing
 
 <!-- contribution badges -->
+[![Greenkeeper badge](https://badges.greenkeeper.io/trevtrich/cli.svg)](https://greenkeeper.io/)
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
 [![semantic-release][semantic-release-badge]][semantic-release-link]
