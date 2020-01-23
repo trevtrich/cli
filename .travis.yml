@@ -3,7 +3,7 @@ language: node_js
 notifications:
   email: false
 import:
-  - source: travi/.travis-ci:authenticated-semantic-release.yml
+  - source: trevtrich/.travis-ci:authenticated-semantic-release.yml
 before_script:
 - npm ls >/dev/null
 after_success: 'npm run coverage:report'
