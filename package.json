@@ -3,7 +3,9 @@
   "description": "terminal interface to my involved tasks",
   "license": "MIT",
   "version": "0.0.0-semantically-released",
-  "bin": {"trev": "bin/trev.js"},
+  "bin": {
+    "trev": "bin/trev.js"
+  },
   "files": [
     "bin/"
   ],

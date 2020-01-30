@@ -4,3 +4,7 @@ repository:
   description: terminal interface to my involved tasks
   homepage: 'https://github.com/trevtrich/cli#readme'
   private: false
+
+collaborators:
+  - username: travi-bot
+    permission: push
