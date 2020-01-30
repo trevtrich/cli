@@ -6,5 +6,5 @@ repository:
   private: false
 
 collaborators:
-  - username: travi-bot
+  - username: trevtrichbot
     permission: push
