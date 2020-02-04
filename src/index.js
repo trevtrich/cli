@@ -1,1 +1,1 @@
-console.log('I made a module!'); // eslint-disable-line no-console
+export {default} from '@oclif/command';

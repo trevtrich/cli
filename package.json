@@ -4,10 +4,14 @@
   "license": "MIT",
   "version": "0.0.0-semantically-released",
   "bin": {
-    "trev": "bin/trev.js"
+    "trev": "./bin/run"
   },
+  "main": "src/index.js",
   "files": [
-    "bin/"
+    "bin/",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
   ],
   "publishConfig": {
     "access": "public"
@@ -16,6 +20,10 @@
   "bugs": "https://github.com/trevtrich/cli/issues",
   "homepage": "https://github.com/trevtrich/cli#readme",
   "author": "Trevor Richardson <npm@trevorrichardson.me> (trevorrichardson.me)",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "trev"
+  },
   "scripts": {
     "test": "npm-run-all --print-label --parallel lint:* --parallel test:*",
     "lint:lockfile": "lockfile-lint --path package-lock.json --type npm --validate-https --allowed-hosts npm",
@@ -23,22 +31,25 @@
     "lint:md": "remark . --frail",
     "lint:sensitive": "ban",
     "lint:travis": "travis-lint .travis.yml",
-    "clean": "rimraf ./bin",
-    "prebuild": "run-s clean",
     "build": "npm-run-all --print-label --parallel build:*",
-    "build:js": "rollup --config",
+    "build:js": "oclif-dev manifest && oclif-dev readme",
     "watch": "run-s 'build:js -- --watch'",
     "prepack": "run-s build",
+    "postpack": "rm -f oclif.manifest.json",
     "test:unit": "nyc run-s test:unit:base",
     "test:unit:base": "DEBUG=any mocha 'src/**/*-test.js'",
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "lint:peer": "npm ls >/dev/null"
   },
   "dependencies": {
+    "@oclif/command": "1.5.19",
+    "@oclif/config": "1.13.3",
+    "@oclif/plugin-help": "2.2.3",
     "update-notifier": "4.0.0"
   },
   "devDependencies": {
     "@babel/register": "7.8.3",
+    "@oclif/dev-cli": "1.22.2",
     "@travi/any": "2.0.7",
     "@travi/babel-preset": "3.0.12",
     "@travi/eslint-config": "1.0.32",
@@ -48,6 +59,7 @@
     "codecov": "3.6.4",
     "commitlint-config-travi": "1.3.6",
     "cz-conventional-changelog": "3.1.0",
+    "globby": "10.0.2",
     "husky": "4.2.1",
     "mocha": "7.0.1",
     "lockfile-lint": "3.0.10",
@@ -55,9 +67,7 @@
     "nyc": "15.0.0",
     "remark-cli": "7.0.1",
     "remark-preset-lint-travi": "1.3.0",
-    "rollup": "1.31.0",
     "rimraf": "3.0.1",
-    "rollup-plugin-executable": "1.5.2",
     "sinon": "8.1.0",
     "travis-lint": "1.0.0"
   }
