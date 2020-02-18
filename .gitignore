@@ -3,3 +3,4 @@
 /.nyc_output/
 
 .eslintcache
+oclif.manifest.json
