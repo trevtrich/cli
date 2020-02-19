@@ -48,6 +48,7 @@
     "@travi/github-scaffolder": "5.0.2",
     "@travi/javascript-scaffolder": "10.9.3",
     "@travi/project-scaffolder": "8.4.1",
+    "@travi/travis-scaffolder-javascript": "3.2.0",
     "update-notifier": "4.1.0"
   },
   "devDependencies": {
