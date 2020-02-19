@@ -12,6 +12,12 @@ class ScaffoldProject extends Command {
       languages: {
         JavaScript: options => scaffoldJavaScript({
           ...options,
+          configs: {
+            eslint: {scope: '@form8ion'},
+            remark: '@form8ion/remark-lint-preset',
+            babelPreset: {name: '@form8ion', packageName: '@form8ion/babel-preset'},
+            commitlint: {name: '@form8ion', packageName: '@form8ion/commitlint-config'}
+          },
           ciServices: {Travis: {scaffolder: scaffoldTravisForJavaScript, public: true}}
         })
       },
