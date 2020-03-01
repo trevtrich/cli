@@ -46,7 +46,7 @@
     "@oclif/config": "1.14.0",
     "@oclif/plugin-help": "2.2.3",
     "@travi/github-scaffolder": "5.0.2",
-    "@travi/javascript-scaffolder": "10.11.0",
+    "@travi/javascript-scaffolder": "10.12.0",
     "@travi/project-scaffolder": "8.4.3",
     "@travi/travis-scaffolder-javascript": "3.2.0",
     "update-notifier": "4.1.0"
