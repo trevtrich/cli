@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@oclif/command": "1.5.19",
-    "@oclif/config": "1.14.0",
+    "@oclif/config": "1.15.0",
     "@oclif/plugin-help": "2.2.3",
     "@travi/github-scaffolder": "5.0.4",
     "@travi/javascript-scaffolder": "10.20.2",
