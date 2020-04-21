@@ -42,6 +42,10 @@
     "lint:peer": "npm ls >/dev/null"
   },
   "dependencies": {
+    "@form8ion/dependabot-scaffolder": "1.2.0",
+    "@form8ion/lift": "1.2.1",
+    "@form8ion/remove-greenkeeper": "1.0.0-alpha.4",
+    "@form8ion/renovate-scaffolder": "1.1.0",
     "@oclif/command": "1.5.19",
     "@oclif/config": "1.15.1",
     "@oclif/plugin-help": "2.2.3",
@@ -49,6 +53,7 @@
     "@travi/javascript-scaffolder": "10.22.0",
     "@travi/project-scaffolder": "8.10.0",
     "@travi/travis-scaffolder-javascript": "3.2.0",
+    "cli-ux": "5.4.5",
     "update-notifier": "4.1.0"
   },
   "devDependencies": {
