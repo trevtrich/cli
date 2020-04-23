@@ -1,6 +1,10 @@
 const {Command} = require('@oclif/command');
 const {prompt: githubPrompt, scaffold: scaffoldGithub} = require('@travi/github-scaffolder');
+const {scaffold: scaffoldDependabot} = require('@form8ion/dependabot-scaffolder');
+const {scaffold: scaffoldRenovate} = require('@form8ion/renovate-scaffolder');
 const {scaffold: scaffoldJavaScript} = require('@travi/javascript-scaffolder');
+const {scaffold: scaffoldAppEngine} = require('@travi/node-app-engine-standard-scaffolder');
+const {scaffold: scaffoldHapi} = require('@form8ion/hapi-scaffolder');
 const {scaffold: scaffoldTravisForJavaScript} = require('@travi/travis-scaffolder-javascript');
 const {scaffold} = require('@travi/project-scaffolder');
 
@@ -18,8 +22,18 @@ class ScaffoldProject extends Command {
             babelPreset: {name: '@form8ion', packageName: '@form8ion/babel-preset'},
             commitlint: {name: '@form8ion', packageName: '@form8ion/commitlint-config'}
           },
-          ciServices: {Travis: {scaffolder: scaffoldTravisForJavaScript, public: true}}
+          ciServices: {Travis: {scaffolder: scaffoldTravisForJavaScript, public: true}},
+          hosts: {
+            'App Engine Standard': {projectTypes: ['node'], scaffolder: scaffoldAppEngine}
+          },
+          applicationTypes: {
+            Hapi: {scaffolder: scaffoldHapi}
+          }
         })
+      },
+      dependencyUpdaters: {
+        Dependabot: {scaffolder: scaffoldDependabot},
+        Renovate: {scaffolder: scaffoldRenovate}
       },
       overrides: {copyrightHolder: 'Trevor Richardson'},
       vcsHosts: {
