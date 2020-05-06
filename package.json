@@ -53,7 +53,7 @@
     "@travi/github-scaffolder": "5.1.1",
     "@travi/javascript-scaffolder": "10.22.1",
     "@travi/node-app-engine-standard-scaffolder": "1.2.4",
-    "@travi/project-scaffolder": "8.10.2",
+    "@travi/project-scaffolder": "8.10.3",
     "@travi/travis-scaffolder-javascript": "3.2.0",
     "update-notifier": "4.1.0"
   },
