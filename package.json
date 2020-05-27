@@ -58,7 +58,7 @@
     "update-notifier": "4.1.0"
   },
   "devDependencies": {
-    "@babel/register": "7.9.0",
+    "@babel/register": "7.10.1",
     "@oclif/dev-cli": "1.22.2",
     "@travi/any": "2.0.9",
     "@travi/babel-preset": "3.0.20",
