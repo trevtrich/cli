@@ -50,7 +50,7 @@
     "@oclif/command": "1.6.1",
     "@oclif/config": "1.15.1",
     "@oclif/plugin-help": "3.1.0",
-    "@travi/github-scaffolder": "5.1.1",
+    "@travi/github-scaffolder": "5.1.2",
     "@travi/javascript-scaffolder": "10.22.6",
     "@travi/node-app-engine-standard-scaffolder": "1.2.4",
     "@travi/project-scaffolder": "8.10.3",
