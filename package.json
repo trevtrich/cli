@@ -11,7 +11,7 @@
     "bin/",
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json",
-    "/lib"
+    "/lib/"
   ],
   "publishConfig": {
     "access": "public"
@@ -31,7 +31,7 @@
     "lint:md": "remark . --frail",
     "lint:sensitive": "ban",
     "lint:travis": "travis-lint .travis.yml",
-    "build": "npm-run-all --print-label --parallel build:*",
+    "build": "npm-run-all --print-label --sequential build:*",
     "build:js": "babel src --out-dir lib",
     "build:oclif": "oclif-dev manifest",
     "watch": "run-s 'build:js -- --watch'",
