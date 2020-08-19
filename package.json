@@ -6,12 +6,12 @@
   "bin": {
     "trev": "./bin/run"
   },
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "files": [
     "bin/",
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json",
-    "/src"
+    "/lib"
   ],
   "publishConfig": {
     "access": "public"
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/trevtrich/cli#readme",
   "author": "Trevor Richardson <npm@trevorrichardson.me> (trevorrichardson.me)",
   "oclif": {
-    "commands": "./src/commands",
+    "commands": "./lib/commands",
     "bin": "trev"
   },
   "scripts": {
@@ -32,7 +32,8 @@
     "lint:sensitive": "ban",
     "lint:travis": "travis-lint .travis.yml",
     "build": "npm-run-all --print-label --parallel build:*",
-    "build:js": "oclif-dev manifest",
+    "build:js": "babel src --out-dir lib",
+    "build:oclif": "oclif-dev manifest",
     "watch": "run-s 'build:js -- --watch'",
     "prepack": "run-s build",
     "postpack": "rm -f oclif.manifest.json",
@@ -60,11 +61,12 @@
     "update-notifier": "4.1.0"
   },
   "devDependencies": {
+    "@babel/cli": "7.10.5",
     "@babel/register": "7.9.0",
+    "@form8ion/babel-preset": "1.6.29",
     "@form8ion/commitlint-config": "1.0.9",
     "@oclif/dev-cli": "1.22.2",
     "@travi/any": "2.0.7",
-    "@travi/babel-preset": "3.0.19",
     "@travi/eslint-config": "1.0.34",
     "@travi/eslint-config-mocha": "1.0.8",
     "ban-sensitive-files": "1.9.9",

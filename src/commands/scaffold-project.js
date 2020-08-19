@@ -1,14 +1,15 @@
-const {Command} = require('@oclif/command');
-const {prompt: githubPrompt, scaffold: scaffoldGithub} = require('@travi/github-scaffolder');
-const {scaffold: scaffoldDependabot} = require('@form8ion/dependabot-scaffolder');
-const {scaffold: scaffoldRenovate} = require('@form8ion/renovate-scaffolder');
-const {scaffold: scaffoldJest} = require('@form8ion/jest-scaffolder');
-const {scaffold: scaffoldMocha} = require('@form8ion/mocha-scaffolder');
-const {scaffold: scaffoldJavaScript} = require('@travi/javascript-scaffolder');
-const {scaffold: scaffoldAppEngine} = require('@travi/node-app-engine-standard-scaffolder');
-const {scaffold: scaffoldHapi} = require('@form8ion/hapi-scaffolder');
-const {scaffold: scaffoldTravisForJavaScript} = require('@travi/travis-scaffolder-javascript');
-const {scaffold} = require('@travi/project-scaffolder');
+import {Command} from '@oclif/command';
+
+import {prompt as githubPrompt, scaffold as scaffoldGithub} from '@travi/github-scaffolder';
+import {scaffold as scaffoldDependabot} from '@form8ion/dependabot-scaffolder';
+import {scaffold as scaffoldRenovate} from '@form8ion/renovate-scaffolder';
+import {scaffold as scaffoldJest} from '@form8ion/jest-scaffolder';
+import {scaffold as scaffoldMocha} from '@form8ion/mocha-scaffolder';
+import {scaffold as scaffoldJavaScript} from '@travi/javascript-scaffolder';
+import {scaffold as scaffoldAppEngine} from '@travi/node-app-engine-standard-scaffolder';
+import {scaffold as scaffoldHapi} from '@form8ion/hapi-scaffolder';
+import {scaffold as scaffoldTravisForJavaScript} from '@travi/travis-scaffolder-javascript';
+import {scaffold} from '@travi/project-scaffolder';
 
 class ScaffoldProject extends Command {
   async run() {
