@@ -54,7 +54,7 @@
     "@oclif/config": "1.15.1",
     "@oclif/plugin-help": "3.2.0",
     "@travi/github-scaffolder": "5.1.1",
-    "@travi/javascript-scaffolder": "11.2.0",
+    "@travi/javascript-scaffolder": "11.2.1",
     "@travi/node-app-engine-standard-scaffolder": "1.2.5",
     "@travi/project-scaffolder": "8.10.5",
     "@travi/travis-scaffolder-javascript": "3.2.2",
