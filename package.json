@@ -57,7 +57,7 @@
     "@travi/javascript-scaffolder": "11.2.3",
     "@travi/node-app-engine-standard-scaffolder": "1.2.5",
     "@travi/project-scaffolder": "8.10.5",
-    "@travi/travis-scaffolder-javascript": "3.2.2",
+    "@travi/travis-scaffolder-javascript": "4.0.0",
     "update-notifier": "4.1.1"
   },
   "devDependencies": {
