@@ -51,7 +51,7 @@
     "@form8ion/remove-greenkeeper": "1.1.4",
     "@form8ion/renovate-scaffolder": "1.3.0",
     "@oclif/command": "1.8.0",
-    "@oclif/config": "1.15.1",
+    "@oclif/config": "1.17.0",
     "@oclif/plugin-help": "3.2.0",
     "@travi/github-scaffolder": "5.2.0",
     "@travi/javascript-scaffolder": "11.3.0",
