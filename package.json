@@ -61,7 +61,7 @@
     "update-notifier": "5.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.11.6",
+    "@babel/cli": "7.12.1",
     "@babel/register": "7.12.1",
     "@form8ion/babel-preset": "1.6.34",
     "@form8ion/commitlint-config": "1.0.14",
