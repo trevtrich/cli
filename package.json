@@ -63,7 +63,7 @@
   "devDependencies": {
     "@babel/cli": "7.12.1",
     "@babel/register": "7.12.1",
-    "@form8ion/babel-preset": "1.6.34",
+    "@form8ion/babel-preset": "1.6.35",
     "@form8ion/commitlint-config": "1.0.14",
     "@oclif/dev-cli": "1.22.2",
     "@travi/any": "2.0.13",
