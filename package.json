@@ -58,7 +58,7 @@
     "@travi/node-app-engine-standard-scaffolder": "1.2.5",
     "@travi/project-scaffolder": "8.10.10",
     "@travi/travis-scaffolder-javascript": "4.0.0",
-    "update-notifier": "5.0.0"
+    "update-notifier": "5.0.1"
   },
   "devDependencies": {
     "@babel/cli": "7.12.1",
