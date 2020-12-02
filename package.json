@@ -65,7 +65,7 @@
     "@babel/register": "7.12.1",
     "@form8ion/babel-preset": "1.6.39",
     "@form8ion/commitlint-config": "1.0.14",
-    "@oclif/dev-cli": "1.24.4",
+    "@oclif/dev-cli": "1.25.0",
     "@travi/any": "2.0.15",
     "@travi/eslint-config": "1.0.56",
     "@travi/eslint-config-mocha": "1.0.8",
