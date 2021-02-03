@@ -52,7 +52,7 @@
     "@form8ion/renovate-scaffolder": "1.5.0",
     "@oclif/command": "1.8.0",
     "@oclif/config": "1.17.0",
-    "@oclif/plugin-help": "3.2.1",
+    "@oclif/plugin-help": "3.2.2",
     "@travi/github-scaffolder": "5.3.2",
     "@travi/javascript-scaffolder": "12.2.1",
     "@travi/node-app-engine-standard-scaffolder": "1.2.6",
