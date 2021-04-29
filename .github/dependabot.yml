@@ -1,0 +1,114 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: "@travi/javascript-scaffolder"
+    versions:
+    - 12.2.2
+    - 12.2.3
+    - 12.2.4
+    - 12.2.5
+    - 12.2.6
+    - 12.2.7
+    - 12.2.9
+  - dependency-name: "@travi/project-scaffolder"
+    versions:
+    - 9.0.10
+    - 9.0.5
+    - 9.0.6
+    - 9.0.7
+    - 9.0.8
+  - dependency-name: "@travi/eslint-config"
+    versions:
+    - 1.0.60
+    - 1.0.61
+    - 1.0.62
+    - 1.0.63
+    - 1.0.64
+    - 1.0.65
+  - dependency-name: "@form8ion/babel-preset"
+    versions:
+    - 1.6.42
+    - 1.6.43
+    - 1.6.44
+    - 1.6.45
+    - 1.6.46
+    - 1.6.47
+    - 1.6.48
+    - 1.6.49
+    - 1.6.50
+    - 1.6.51
+    - 1.6.52
+    - 1.6.53
+    - 1.6.54
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: "@babel/cli"
+    versions:
+    - 7.12.13
+    - 7.12.16
+    - 7.12.17
+    - 7.13.0
+    - 7.13.10
+    - 7.13.14
+  - dependency-name: "@babel/register"
+    versions:
+    - 7.12.13
+    - 7.13.0
+    - 7.13.14
+    - 7.13.8
+  - dependency-name: sinon
+    versions:
+    - 10.0.0
+  - dependency-name: husky
+    versions:
+    - 5.0.8
+    - 5.0.9
+    - 5.1.0
+    - 5.1.1
+    - 5.1.2
+    - 5.1.3
+    - 5.2.0
+  - dependency-name: "@form8ion/lift"
+    versions:
+    - 1.12.2
+    - 1.12.3
+  - dependency-name: mocha
+    versions:
+    - 8.3.0
+    - 8.3.1
+  - dependency-name: remark-preset-lint-travi
+    versions:
+    - 1.3.12
+  - dependency-name: chai
+    versions:
+    - 4.3.0
+    - 4.3.1
+    - 4.3.2
+    - 4.3.3
+  - dependency-name: commitlint-config-travi
+    versions:
+    - 1.3.12
+    - 1.3.13
+  - dependency-name: "@form8ion/commitlint-config"
+    versions:
+    - 1.0.15
+    - 1.0.16
+  - dependency-name: lockfile-lint
+    versions:
+    - 4.6.0
+    - 4.6.1
+  - dependency-name: "@travi/eslint-config-mocha"
+    versions:
+    - 1.0.9
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
