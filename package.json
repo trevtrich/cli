@@ -30,7 +30,6 @@
     "lint:js": "eslint . --cache",
     "lint:md": "remark . --frail",
     "lint:sensitive": "ban",
-    "lint:travis": "travis-lint .travis.yml",
     "build": "npm-run-all --print-label --sequential build:*",
     "build:js": "babel src --out-dir lib",
     "build:oclif": "oclif-dev manifest",
@@ -84,7 +83,6 @@
     "remark-cli": "9.0.0",
     "remark-preset-lint-travi": "1.3.11",
     "rimraf": "3.0.2",
-    "sinon": "9.2.4",
-    "travis-lint": "1.0.0"
+    "sinon": "9.2.4"
   }
 }
